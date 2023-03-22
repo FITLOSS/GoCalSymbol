@@ -89,3 +89,46 @@ func main() {
 	fmt.Println(algo_str, "=", result)
 }
 ```
+#### Reuse After Set Rule
+```go
+package main
+
+import (
+	"fmt"
+
+	"github.com/FITLOSS/GoCalSymbol"
+)
+
+func main() {
+	//define a compute rule
+	algo_str := "-(お*は*2+よ)^3+(う*8)^2"
+	//new a reuse struct with max rule length + 1
+	cal := CalSymbol.NewStruct(len(algo_str) + 1)
+	//set rule
+	cal.GiveRule(algo_str)
+
+	//first time use>>>>>>>>
+	//set value of symbol using map
+	cal.SetByMap(map[rune]float64{
+		'お': 770.0,
+		'は': 20,
+		'よ': 20,
+		'う': 9,
+	})
+	//compute result
+	result := cal.Compute()
+	fmt.Println(algo_str, "=", result)
+
+	//second time use>>>>>>>>
+	//set value of symbol using map
+	cal.SetByMap(map[rune]float64{
+		'お': 10.0,
+		'は': 6,
+		'よ': 2,
+		'う': 7,
+	})
+	//compute result
+	result = cal.Compute()
+	fmt.Println(algo_str, "=", result)
+}
+```
