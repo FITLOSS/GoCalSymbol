@@ -20,6 +20,11 @@ It's what you need
 
 ## Getting started
 ### Getting GoCalSymbol
+#### Download Package
+```sh
+go get -u github.com/FITLOSS/GoCalSymbol
+```
+#### Import Package
 ```
 import "github.com/FITLOSS/GoCalSymbol"
 ```
