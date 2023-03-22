@@ -24,6 +24,10 @@ It's what you need
 ```sh
 go get -u github.com/FITLOSS/GoCalSymbol
 ```
+**Or**
+```sh
+go get -u github.com/FITLOSS/GoCalSymbol@v0.1.1
+```
 #### Import Package
 ```
 import "github.com/FITLOSS/GoCalSymbol"
