@@ -30,7 +30,7 @@ import "github.com/FITLOSS/GoCalSymbol"
 ```
 ### Running GoCalSymbol
 
-First you need to import GoCalSymbol package for using GoCalSymbol, one simplest example likes the follow `example.go`:
+First you need to import GoCalSymbol package for using GoCalSymbol, one simplest example likes the follow :
 
 ```go
 package main
