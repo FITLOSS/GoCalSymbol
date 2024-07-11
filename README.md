@@ -16,8 +16,7 @@ It's what you need
 * **) : right brackets**
 
 **Invalid Case:**
-* **(negative number) ^ (arbitrarily number)** 
-
+* **(negative number) ^ (arbitrarily non-integer number)** **e.g. (-3) ^ (2.5)** 
 ## Getting started
 ### Getting GoCalSymbol
 #### Download Package
